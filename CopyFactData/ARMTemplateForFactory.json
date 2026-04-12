@@ -358,8 +358,8 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/dbpractice/blobs/",
-					"ignoreEmptyBlobs": false,
+					"blobPathBeginsWith": "/dbpractice/blobs/Input",
+					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('trigger1_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated",
