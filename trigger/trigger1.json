@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/dbpractice/blobs/",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/2fd32234-69f5-4adc-9523-0c0310fba86f/resourceGroups/CopyonlyFactsTablefromDatabase/providers/Microsoft.Storage/storageAccounts/practicedb12",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
