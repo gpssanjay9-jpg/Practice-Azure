@@ -13,8 +13,8 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/dbpractice/blobs/",
-			"ignoreEmptyBlobs": false,
+			"blobPathBeginsWith": "/dbpractice/blobs/Input",
+			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/2fd32234-69f5-4adc-9523-0c0310fba86f/resourceGroups/CopyonlyFactsTablefromDatabase/providers/Microsoft.Storage/storageAccounts/practicedb12",
 			"events": [
 				"Microsoft.Storage.BlobCreated",
