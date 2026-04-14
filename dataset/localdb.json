@@ -1,0 +1,30 @@
+{
+	"name": "localdb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "connection to my pc",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"f_name": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": {
+					"value": "@dataset().f_name",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
